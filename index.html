@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./calculator.png"> 
+    <title>My Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+    <main class="calculator">
+        <div class="header">
+           <div class="title"><h1>Calculator</h1></div>
+      
+            <div class="theme">
+                <h6>THEME</h6>
+                <div class="theme-box">
+                <div class="label-box">
+                    <label for="theme1">1</label>
+                    <label for="theme2">2</label>
+                    <label for="theme3">3</label>
+                </div>
+                </div>
+                <div class="radio-box">
+                    <input type="radio" name="theme" id="theme1" placeholder="none" value="0" checked>
+                    <input type="radio" name="theme" id="theme2"  value="1" placeholder="none" >
+                    <input type="radio" name="theme" id="theme3" value="2" placeholder="none">
+
+                  </div>
+          
+
+            </div>
+        </div> 
+        <!-- header ends -->
+        <div class="calc-screen">
+            <div data-previous-operand class="calc-output_prev"></div>
+            <div data-current-operand class="calc-output_current"></div>
+          </div>
+          <!-- screen ends -->
+
+          <div class="calc-keyboard">
+            <!-- first row -->
+            <button class="btn" data-num >7</button>
+            <button class="btn" data-num>8</button>
+            <button class="btn"data-num >9</button>
+            <button class="btn func-btn" data-delete >DEL</button>
+    
+            <!-- second row -->
+            <button class="btn" data-num>4</button>
+            <button class="btn"data-num >5</button>
+            <button class="btn"data-num >6</button>
+            <button class="btn"  data-operator>+</button>
+    
+            <!-- third row -->
+            <button class="btn"data-num >1</button>
+            <button class="btn" data-num>2</button>
+            <button class="btn" data-num>3</button>
+            <button class="btn" data-operator >-</button>
+    
+            <!-- fourth row  -->
+            <button class="btn" data-num >.</button>
+            <button class="btn" data-num >0</button>
+            <button class="btn" data-operator>/</button>
+            <button class="btn" data-operator >x</button>
+    
+            <!-- fifth row -->
+            <button class="btn func-btn" data-reset >AC</button>
+            <button class="btn func-btn" data-negate >±</button>
+            <button class="btn hlighted" data-output >=</button>
+          </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
